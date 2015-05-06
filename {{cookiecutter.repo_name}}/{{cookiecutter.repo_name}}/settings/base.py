@@ -63,6 +63,7 @@ INSTALLED_APPS = (
     'wagtail.wagtailforms',
 
     '{{ cookiecutter.repo_name }}.utils',
+    '{{ cookiecutter.repo_name }}.users',
     '{{ cookiecutter.repo_name }}.home',
 )
 
@@ -80,6 +81,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = '{{ cookiecutter.repo_name }}.urls'
 WSGI_APPLICATION = '{{ cookiecutter.repo_name }}.wsgi.application'
+
+AUTH_USER_MODEL = 'users.User'
 
 
 # Database
