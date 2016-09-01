@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {% compress css %}
-            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}">
+            <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/main.scss' %}">
         {% endcompress %}
 
         {% block extra_css %}
@@ -27,7 +27,7 @@
         {% block content %}{% endblock %}
 
         {% compress js %}
-            <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+            <script type="text/javascript" src="{% static 'scripts/main.js' %}"></script>
         {% endcompress %}
 
         {% block extra_js %}
